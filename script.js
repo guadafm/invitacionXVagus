@@ -1,5 +1,5 @@
-// Definir la fecha objetivo
-const countDownDate = new Date("Dec 14, 2024 21:00:00").getTime();
+// Definir la fecha objetivo (26 de septiembre de 2025, 21:30 hora Argentina)
+const countDownDate = new Date("September 26, 2025 21:30:00").getTime();
 
 // Actualizar la cuenta atrás cada segundo
 const x = setInterval(function() {
@@ -18,26 +18,31 @@ const x = setInterval(function() {
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
 
-    // Si la cuenta atrás termina, mostrar mensaje
+    // Si la fecha ya pasó, mostrar un mensaje
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector(".countdown h3").innerHTML = "¡Es hora de celebrar";
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
     }
 }, 1000);
 
+// Función para recordatorio
 function setReminder() {
     alert("¡Recordatorio agendado!");
 }
 
+// Función para mostrar/ocultar datos bancarios
 document.getElementById('showButton').addEventListener('click', function() {
     var bankDetails = document.getElementById('bankDetails');
     
     // Cambiar el estado de visibilidad de los datos bancarios
     if (bankDetails.classList.contains('hidden')) {
-      bankDetails.classList.remove('hidden');
-      this.innerText = 'Ocultar Datos Bancarios'; // Cambiar texto del botón
+        bankDetails.classList.remove('hidden');
+        this.innerText = 'Ocultar Datos Bancarios';
     } else {
-      bankDetails.classList.add('hidden');
-      this.innerText = 'Ver Datos Bancarios'; // Volver a mostrar el texto original del botón
+        bankDetails.classList.add('hidden');
+        this.innerText = 'Ver Datos Bancarios';
     }
-  });
+});
