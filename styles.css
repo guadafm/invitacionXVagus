@@ -1,0 +1,412 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;  
+    display: flex;
+    background-color: #b5d6e2;
+    justify-content: center;
+    align-items: flex-start; /* Change from center to flex-start */
+    min-height: 100vh; /* Change from height to min-height */
+    padding: 20px;
+    overflow-x: hidden;
+    background-image: url('WhatsApp\ Image\ 2025-07-26\ at\ 17.50.59.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.84);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;  /* Limitar el ancho máximo */
+    overflow: hidden;  /* Evitar que el contenido se desborde */
+}
+.header{
+   margin-top: px;
+   background-color: #fff;
+}
+
+.header img {
+    width: 100%; 
+    height: auto;  /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: contain;  /* Asegura que la imagen no se recorte y se vea completa */
+    border-radius: 15px;
+    background-color: #fff;
+    box-sizing: content-box;
+    display: flex;
+
+}
+/* Estilo para el contenido */
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h1 {
+    font-size: 3.4rem;
+    color: #002041;
+    margin-bottom: 10px;
+        font-family: "Fleur De Leah", cursive;
+        font-weight: 500;
+        font-style: normal;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #93a1aa;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.button {
+    background-color: #e2f1f3;
+    border: none;
+    padding: 12px 20px;
+    color: #041c35;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #d2edf9;
+}
+
+/* Estilo para el temporizador */
+.countdown {
+    margin-top: 60px; /* Reducir el margin-top */
+    margin-bottom: 30px; /* Agregar margin-bottom */
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Espaciado entre círculo y etiqueta */
+}
+
+.time {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: hwb(199 63% 9%);
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time span {
+    font-size: 0.9rem; /* Tamaño más grande para los números */
+    color: #ffffff;
+}
+
+.time-container p {
+    font-size: 0.7rem;
+    color: #002041;
+    margin: 0; /* Quitar márgenes */
+    text-align: center;
+}
+
+/* Remover esta regla antigua */
+.countdown p {
+    /* Comentar o eliminar esta sección */
+}
+/* Estilo para los círculos del temporizador */
+/* Estilo para la sección de la celebración */
+.celebracion {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #002041;
+    text-align: center;
+}
+.celebracion h2 {
+    font-size: 1.5rem;
+    color: #002041;
+    margin-bottom: 15px;
+}
+
+.celebracion p {
+    font-size: 1rem;
+    color: #011a34b9;
+    margin-bottom: 2px;
+}
+
+.celebracion img {
+    margin-bottom: 10px;
+    width: 100px;
+}
+.dress-code {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ffffff; /* Color suave de fondo */
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.dress-code h2 {
+    font-size: 1.5rem;
+    color: #002041;
+    margin-bottom: 15px;
+}
+
+.dress-code p {
+    font-size: 1rem;
+    color: #011a34b9;
+    margin-bottom: 2px;
+}
+
+.dress-code img {
+    margin-bottom: 10px;
+    width: 70px;
+    animation: pulse 2.2s infinite;
+}
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+
+.gift img{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.gift h2{
+    font-size: 1.5rem;
+    color: #002041;
+    margin-bottom: 20px;
+}
+.gift p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #011a34b9;
+}
+
+.hidden {
+    display: none; /* Oculta los datos bancarios por defecto */
+  }
+  
+  button {
+    padding: 10px 40px;
+    background-color: #76b7d5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4586c7;
+  }
+  .rsvp-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  .rsvp-container h2 {
+    font-size: 1.5rem;
+    color: #002041;
+    margin-bottom: 10px;
+  }
+
+  .rsvp-container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #011a34b9;
+  }
+  
+  /* Estilo general para el contenedor */
+  .attendance {
+    text-align: center;
+    margin: 20px;
+  }
+
+  /* Estilo para el texto superior */
+  .attendance p {
+    font-size: 1rem;
+    color: #011a34b9;
+}
+
+  /* Opciones en línea */
+  .options {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px; /* Espaciado entre opciones */
+  }
+
+  /* Estilo para los labels */
+  .options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 5px; /* Espaciado entre el botón y el texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+  /* Estilo para los botones de radio */
+  .options input[type="radio"] {
+    transform: scale(1.2); /* Agranda el botón */
+  }
+
+  
+  input[type="radio"] {
+    margin-right: auto;
+    cursor: pointer;
+    accent-color: #708cb4;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #64abdd;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #4586c7;
+  }
+  
+  label {
+    font-size: 0.8rem;
+  }
+
+  .fin img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  /* Contenedor principal */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    gap: 10px; /* Espaciado entre los contenedores */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 20px;
+  }
+  
+  /* Estilo general para los contenedores */
+  .input-container {
+    width: 100%;
+  }
+  
+  /* Estilo para el input de texto */
+  input[type="text"], 
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordes claros */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quita el contorno al hacer clic */
+    transition: border-color 0.3s; /* Transición suave */
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Cambios al enfocarse */
+  input[type="text"]:focus, 
+  textarea:focus {
+    border-color: #5598cf; /* Cambia el color del borde al enfocarse */
+  }
+
+  input::placeholder, 
+  textarea::placeholder {
+    color: #aaaaaa; 
+  }
+  textarea {
+    resize: none; /* Bloquea la opción de redimensionar */
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .fecha img{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  .music-section {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.music-section img {
+    margin-bottom: 15px;
+    width: 100px;
+    animation: pulse 2.2s infinite;
+}
+
+.music-section h2 {
+    font-size: 1.5rem;
+    color: #002041;
+    margin-bottom: 15px;
+    font-family: "SUSE", sans-serif;
+    font-weight: 600;
+}
+
+.music-section p {
+    font-size: 1rem;
+    color: #011a34b9;
+    margin-bottom: 20px;
+    font-family: "SUSE", sans-serif;
+}

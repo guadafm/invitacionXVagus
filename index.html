@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de XV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Permanent+Marker&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+<img src="agus15.png" alt="piaxv">
+        </div>
+        <div class="content">
+            <h1>¡Estás invitado!</h1>
+            <p>Me encantaría que seas parte de este momento tan especial para mí. ¡Falta poco!</p>
+            <a 
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+de+Pia&details=La+celebración+será+en+Florentino+Ameghino+867,+Quincho+Petrolero.&location=Florentino+Ameghino+867&dates=20241215T000000Z/20241215T080000Z" 
+            target="_blank" 
+            class="button"
+        >Agendar Recordatorio</a>
+            <div class="countdown">
+    <div class="timer">
+        <div class="time-container">
+            <div class="time">
+                <span id="days">00</span>
+            </div>
+            <p>DÍAS</p>
+        </div>
+        <div class="time-container">
+            <div class="time">
+                <span id="hours">00</span>
+            </div>
+            <p>HORAS</p>
+        </div>
+        <div class="time-container">
+            <div class="time">
+                <span id="minutes">00</span>
+            </div>
+            <p>MINUTOS</p>
+        </div>
+        <div class="time-container">
+            <div class="time">
+                <span id="seconds">00</span>
+            </div>
+            <p>SEGUNDOS</p>
+        </div>
+    </div>
+</div>
+            <div class="celebracion">
+                <img src="location.gif" alt="Icono de celebración">
+                 <h2>DIRECCIÓN</h2>
+                <p>La dirección es Florentino Ameghino 867, Quincho Petrolero</p>
+                <div class="fecha">
+                  <img src="14 DIC.png" alt="fecha">
+                </div>
+<a href="https://bit.ly/49epmlW" target="_blank">
+    <button class="btn-location">VER UBICACIÓN</button>
+  </a>  
+                <div class="dress-code">
+                    <img src="wedding.png" alt="dresscode">
+                    <h2>DRESS CODE</h2>
+                    <p>¡Elegante Sport!</p> 
+                    <p>No se permite asistir de celeste.</p>
+                </div>
+                  <div class="gift">
+                    <img src="gift.gif" alt="giftgif">
+                    <h2>REGALOS</h2>
+                    <P>Lo más importante es tu presencia, pero si deseas hacerme un regalo acá tenés mi sugerencia.</P>
+                    <button id="showButton">VER DATOS BANCARIOS</button>
+                    <div id="bankDetails" class="hidden">
+                      <p>Mercado Pago</p>
+                      <p><strong>Alias:</strong> agusstina.mmp</p>
+                      <p>¡Muchas gracias!</p>
+                    </div>
+                </div>
+            <div class="music-section">
+    <img src="music.gif" alt="music gif">
+    <h2>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h2>
+    <p>Ayúdame sugiriendo las canciones que pensás que no pueden faltar</p>
+    
+    <form action="https://formspree.io/f/xwpkwzkz" method="POST">
+        <input type="hidden" name="_subject" value="Sugerencia Musical para XV de Agus">
+        
+        <div class="form-container">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    name="song-name" 
+                    placeholder="Nombre de la canción*"
+                    required>
+            </div>
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    name="artist" 
+                    placeholder="Artista*"
+                    required>
+            </div>
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    name="music-link" 
+                    placeholder="Link de YouTube, Spotify...">
+            </div>
+        </div>
+        <button type="submit" class="submit-button">SUGERIR CANCIÓN</button>
+    </form>
+</div>
+                <div class="rsvp-container">
+                    <div class="rsvp-container">
+                        <form action="https://formspree.io/f/xwpkwzkz" method="POST">
+                          <h2>CONFIRMAR ASISTENCIA</h2>
+                          <p>Por favor, confirma tu asistencia</p>
+                          <div class="option">
+                            <input type="radio" id="yes" name="attendance" value="yes">
+                            <label for="yes">Sí, allí estaré!</label>
+                          </div>
+                          <div class="option">
+                            <input type="radio" id="no" name="attendance" value="no">
+                            <label for="no">No podré asistir</label>
+                          </div>
+                          <div class="form-container">
+                            <div class="input-container">
+                              <input 
+                                type="text" 
+                                id="names" 
+                                name="names" 
+                                placeholder="Nombre, apellido y acompañantes">
+                            </div>
+                            <div class="input-container">
+                              <textarea 
+                                id="message" 
+                                name="message" 
+                                placeholder="Mensajitos para agus:" 
+                                rows="4"></textarea>
+                            </div>
+                          </div>
+                          <button type="submit" class="submit-button">ENVIAR RESPUESTA</button>
+                        </form>
+                      </div>                      
+                  </div>
+                  <div class="fin">
+                    <img src="1.png" alt="despedida">
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
